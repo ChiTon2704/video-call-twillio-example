@@ -1,0 +1,90 @@
+.room {
+  display: flex;
+  .body-left-wrapper {
+    height: calc(100vh - 55px);
+    width: 300px;
+    border-right: 1px solid green;
+    .header {
+      padding: 10px 0px;
+      display: flex;
+      width: 300px;
+      align-items: center;
+      border-bottom: 1px solid green;
+      .room-name {
+        flex: 1;
+        padding: 0px 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        word-break: break-all;
+      }
+      button {
+        background-color: green;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px;
+        margin-right: 10px;
+      }
+    }
+    .local-participant-has-remote {
+      position: relative;
+      width: 100%;
+      .local-participant {
+        position: absolute;
+        .name-user {
+          color: white;
+          padding: 10px;
+          font-size: 14px;
+          background-color: rgb(0, 0, 0);
+        }
+        video {
+          width: 100%;
+          object-fit: cover;
+          transform: scale(-1, 1);
+        }
+      }
+    }
+  }
+  .local-participant-not-remote {
+    height: calc(100vh - 55px);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .local-participant {
+      .name-user {
+        padding: 30px 0px 10px 10px;
+        font-size: 14px;
+        line-height: 20px;
+        border-bottom: 1px solid green;
+      }
+      video {
+        width: 100%;
+        height: calc(100vh - 115px);
+        background-color: black;
+        transform: scale(-1, 1);
+      }
+    }
+  }
+  .remote-participants {
+    height: calc(100vh - 55px);
+    width: 100%;
+    overflow: hidden;
+    .remote-participant {
+      .name-user {
+        padding: 30px 0px 10px 10px;
+        font-size: 14px;
+        line-height: 20px;
+        border-bottom: 1px solid green;
+      }
+      video {
+        width: 100%;
+        height: calc(100vh - 115px);
+        background-color: black;
+      }
+    }
+  }
+}

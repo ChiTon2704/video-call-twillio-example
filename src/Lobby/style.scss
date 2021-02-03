@@ -1,0 +1,60 @@
+.lobby-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .lobby-wrapper {
+    margin-top: 20px;
+    width: 360px;
+    border: 1px solid green;
+    border-radius: 5px 5px 0px 0px;
+
+    .header {
+      color: white;
+      border-bottom: 1px solid #d1cece;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: green;
+      border-radius: 3px 3px 0px 0px;
+    }
+    form {
+      padding: 10px;
+      .name-user {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        .label {
+          width: 100px;
+          font-weight: 500;
+        }
+        input {
+          flex: 1;
+          height: 20px;
+        }
+      }
+      .name-room {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        .label {
+          width: 100px;
+          font-weight: 500;
+        }
+        input {
+          flex: 1;
+          height: 20px;
+        }
+      }
+      .join-btn {
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        background-color: green;
+        cursor: pointer;
+      }
+    }
+  }
+}

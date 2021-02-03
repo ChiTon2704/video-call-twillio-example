@@ -1,0 +1,66 @@
+.banner-bottom {
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 #fff;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  z-index: 2;
+  transition: opacity 1.2s, transform 1.2s, visibility 0s 1.2s;
+  opacity: 0%;
+  visibility: hidden;
+  font-size: 14px;
+  color: rgb(165, 164, 164);
+  line-height: 20px;
+  .icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: solid 1px #d8d7d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+    margin-top: 28px;
+    cursor: pointer;
+  }
+  .icon-on {
+    background-color: #fff;
+  }
+  .icon-off {
+    background-color: black;
+  }
+  .mic-off-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .end-call-btn {
+    background-color: #ea6259;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 48px;
+    cursor: pointer;
+  }
+  .camera-off-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-icon {
+    font-size: 12px;
+    color: black;
+  }
+}
+.banner-bottom.isShowBanner {
+  transition: opacity 0.6s, transform 0.6s, visibility 0s;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0%, 0px);
+}

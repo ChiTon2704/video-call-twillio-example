@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-function App() {
+// import VideoChat from './VideoChat';
+import VideoCallScreen from './VideoCallScreen'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app-title">Video Call Twillio Example</div>
+      <div>
+        <VideoCallScreen />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
